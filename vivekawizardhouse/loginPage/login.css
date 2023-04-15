@@ -1,0 +1,91 @@
+
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+    margin: 0;
+    background-image: url('../images/wizardhouse.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+ }
+.blackbg{
+    
+/* background-color: black; */
+opacity: 60%;
+height: 100%;
+
+}
+h1{
+    color: white;
+}
+.navbar{
+    width: 38%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+ 
+    height: 13%;
+}
+#logo{
+    height: 100%;
+    z-index: 10;
+    filter: brightness(2.4);
+}
+.loginbox{
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3%;
+    height: 30%;
+    width: 50%;
+    height: 70%;
+}
+.loginmaterials{
+    display: flex;
+    flex-direction: column;
+   
+    align-items: center;
+ 
+    height: 80%;
+    width: 70%;
+}
+#logintext{
+    margin-bottom: 10%;
+    font-family: sans-serif ;
+}
+input{
+    border-color: red;
+    border-radius: 30px;
+    background-color: black;
+    width: 76%;
+    margin-bottom: 5%;
+    padding: 10px;
+    color: white;
+    height: 7%;
+}
+.button{
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: yellow;
+    height: 10%;
+    width: 76%;
+    border-radius: 30px;
+    color: black;
+    font-family: sans-serif;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+ @media (min-width: 115px ) and (max-width : 800px)  {.navbar{
+    width: 90%;
+ }
+.loginbox{
+    width: 100%;
+    height: 100%;
+}}
+    
