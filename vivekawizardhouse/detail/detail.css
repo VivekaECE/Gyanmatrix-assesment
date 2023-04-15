@@ -1,0 +1,110 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container {
+    height: 90%;
+    width: 80%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#card {
+    height: 80%;
+    width: 60%;
+    border: solid 10px black;
+    border-radius: 10px;
+    background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.3));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#logo {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+#inner-card {
+    width: 95%;
+    height: 95%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+#right, #left {
+    height: 100%;
+}
+
+#right {
+    padding: 20px 50px;
+    width: 50%;
+}
+
+#houseLogo {
+    position: absolute;
+    top: -75px;
+}
+
+#detail {
+    width: 100%;
+    color: white;
+}
+
+.details {
+    display: flex;
+    padding: 10px 10px 0 10px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+#name {
+    font-size: 1.6rem;
+    color: white;
+}
+
+#left {
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+}
+
+@media(max-width: 800px) {
+    #inner-card {
+        flex-direction: column;
+    }
+    #container {
+        width: 100%;
+        height: 100%;
+    }
+    #card {
+        width: 100%;
+        height: 85%;
+    }
+    #photo {
+        width: 150px;
+    }
+    #left {
+        width: 100%;
+    }
+    #right {
+        padding-top: 55px;
+    }
+}
